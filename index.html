@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GlocalAssist — Professional Virtual Assistant Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="cursor" id="cur"></div>
+<div class="cursor-f" id="curf"></div>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div>think <b>global</b>, work local.</div>
+  <div class="top-bar-r">
+    <a href="tel:+17323444260">📞 +1 (732) 344 4260</a>
+    <a href="tel:+19179387208">📞 +91 (917) 938 7208</a>
+    <a href="/cdn-cgi/l/email-protection#2a4f445b5f4358536a4d4645494b464b595943595e04494547">✉ <span class="__cf_email__" data-cfemail="284d46595d415a51684f44474b4944495b5b415b5c064b4745">enquiry@glocalassist.com</span></a>
+  </div>
+</div>
+
+<!-- NAV + HAMBURGER -->
+<nav id="nav">
+  <a href="#" class="logo"><span class="lg">G</span>LOCA<span class="lp">L</span> ASSIST</a>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#timeline">Case Studies</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+  <a href="#contact" class="nav-btn">GET IN TOUCH</a>
+  <button class="ham" id="ham" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#hero"        onclick="closeNav()">Home</a>
+  <a href="#about"       onclick="closeNav()">About Us</a>
+  <a href="#services"    onclick="closeNav()">Services</a>
+  <a href="#timeline"    onclick="closeNav()">Case Studies</a>
+  <a href="#contact"     onclick="closeNav()">Contact Us</a>
+  <a href="#contact" class="mn-btn" onclick="closeNav()">GET IN TOUCH</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="fi f1"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=380&fit=crop&crop=top" alt="Professional VA"></div>
+  <div class="fi f2"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=260&h=330&fit=crop&crop=top" alt="Professional VA"></div>
+  <div class="fi f3"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=280&h=350&fit=crop&crop=top" alt="Professional VA"></div>
+  <div class="fi f4"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=310&h=390&fit=crop&crop=top" alt="Professional VA"></div>
+  <div class="fi f5"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=290&h=370&fit=crop&crop=top" alt="Professional VA"></div>
+  <div class="fi f6"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=270&h=340&fit=crop&crop=top" alt="Professional VA"></div>
+  <div class="fi f7"><img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=300&h=376&fit=crop&crop=top" alt="Professional VA"></div>
+  <div class="hero-content">
+    <div class="hlabel">The Future of Hiring Starts Here</div>
+    <h1>Smarter Hiring.<br><span class="gp">Stronger</span><br><span class="gt" id="swapWord">Teams.</span></h1>
+    <p class="hsub">Professional, personalized, and highly efficient virtual assistance solutions.<br><strong>Hire in-house experts at freelancer's price point!</strong></p>
+    <div class="hbtns">
+      <a href="#contact" class="btn-d">CONSULT WITH US</a>
+      <a href="#services" class="btn-o">Explore Services →</a>
+    </div>
+  </div>
+  <div class="hstats">
+    <div class="hst"><div class="hst-n" data-count="500" data-suf="+">0+</div><div class="hst-l">Expert VAs</div></div>
+    <div class="hst"><div class="hst-n" data-count="500" data-suf="+">0+</div><div class="hst-l">Businesses Served</div></div>
+    <div class="hst"><div class="hst-n" data-count="17" data-suf="+">0+</div><div class="hst-l">Years Experience</div></div>
+    <div class="hst"><div class="hst-n" data-count="96" data-suf="%">0%</div><div class="hst-l">Satisfaction Rate</div></div>
+  </div>
+</section>
+
+<!-- MARQUEE — diagonal pink gradient strip -->
+<div class="mq-outer">
+  <div class="mq-wrap">
+    <div class="mq-track">
+      <span class="mq-item">VIRTUAL ASSIST</span><span class="mq-sep">✦</span>
+      <span class="mq-item outlined">GLOBAL TEAM</span><span class="mq-sep">✦</span>
+      <span class="mq-item">WE ARE GLOCAL</span><span class="mq-sep">✦</span>
+      <span class="mq-item outlined">HIRE SMARTER</span><span class="mq-sep">✦</span>
+      <span class="mq-item">VIRTUAL ASSIST</span><span class="mq-sep">✦</span>
+      <span class="mq-item outlined">GLOBAL TEAM</span><span class="mq-sep">✦</span>
+      <span class="mq-item">WE ARE GLOCAL</span><span class="mq-sep">✦</span>
+      <span class="mq-item outlined">HIRE SMARTER</span><span class="mq-sep">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span class="mq-item">VIRTUAL ASSIST</span><span class="mq-sep">✦</span>
+      <span class="mq-item outlined">GLOBAL TEAM</span><span class="mq-sep">✦</span>
+      <span class="mq-item">WE ARE GLOCAL</span><span class="mq-sep">✦</span>
+      <span class="mq-item outlined">HIRE SMARTER</span><span class="mq-sep">✦</span>
+      <span class="mq-item">VIRTUAL ASSIST</span><span class="mq-sep">✦</span>
+      <span class="mq-item outlined">GLOBAL TEAM</span><span class="mq-sep">✦</span>
+      <span class="mq-item">WE ARE GLOCAL</span><span class="mq-sep">✦</span>
+      <span class="mq-item outlined">HIRE SMARTER</span><span class="mq-sep">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- HIRE SECTION — split layout + team strip -->
+<section class="hire" id="about">
+  <div class="hblob hb1"></div><div class="hblob hb2"></div>
+
+  <!-- Top: left heading | right desc+cta -->
+  <div class="hire-top">
+    <!-- Left: Big heading -->
+    <div class="hire-left">
+      <span class="hire-lbl">The Future of Hiring Starts Here.</span>
+      <h2 class="hire-h">Hire Top<br>Talent,<br>Without<br>Spending<br><span class="acc">Top Dollar.</span></h2>
+    </div>
+    <!-- Right: desc + cta -->
+    <div class="hire-right">
+      <p class="hire-p">We specialize in providing professional, personalized, and highly efficient virtual assistance solutions tailored to your unique needs.</p>
+      <p class="hire-p">No more freelancers at the expert's price point —<br><strong>Hire in-house experts at freelancer's price point!</strong></p>
+      <a href="#contact" class="hire-cta">CONSULT WITH US <span class="arr">→</span></a>
+    </div>
+
+    <!-- Right edge: big portrait photo (bleeds out) -->
+    <div class="hire-edge-img">
+      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=700&fit=crop&crop=top" alt="VA Professional">
+    </div>
+  </div>
+
+  <!-- Bottom: team photo strip -->
+  <div class="hire-team">
+    <div class="hire-team-inner">
+      <div class="htp reveal"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=top" alt="Team member"></div>
+      <div class="htp reveal"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=400&fit=crop&crop=top" alt="Team member"></div>
+      <div class="htp reveal"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=400&fit=crop&crop=top" alt="Team member"></div>
+      <div class="htp reveal"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=400&fit=crop&crop=top" alt="Team member"></div>
+      <div class="htp reveal"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=400&fit=crop&crop=top" alt="Team member"></div>
+      <div class="htp reveal"><img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=300&h=400&fit=crop&crop=top" alt="Team member"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D SCROLL IMAGE GRID SECTION -->
+<div class="grid3d-section" id="grid3d">
+  <div class="grid3d-sticky">
+    <div class="grid3d-vignette"></div>
+    <div class="grid3d-persp" id="g3Stage"></div>
+    <div class="grid3d-scroll-hint">
+      <span>scroll</span>
+      <svg width="14" height="22" viewBox="0 0 16 24" fill="none">
+        <rect x="1" y="1" width="14" height="22" rx="7" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/>
+        <circle cx="8" cy="7" r="2" fill="rgba(255,255,255,.35)">
+          <animate attributeName="cy" values="7;15;7" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- WE HANDLE IT ALL + SERVICES — dark scrolling tracks -->
+<section class="wh-services" id="services">
+
+  <!-- fade overlays -->
+  <div class="whs-fade-top"></div>
+  <div class="whs-fade-bot"></div>
+
+  <!-- Big heading -->
+  <div class="whs-head">
+    <p class="whs-sub">From Tasks to Triumphs:</p>
+    <h2 class="whs-h"><span class="whs-pink">We</span> <span class="whs-grad">Handle</span> It <span class="whs-teal">All</span></h2>
+    <div class="whs-underline"></div>
+    <div class="whs-underline-glow"></div>
+  </div>
+
+  <div class="whs-tracks">
+
+    <!-- ROW 1 — scrolls LEFT -->
+    <div class="whs-track-row">
+      <div class="whs-track row1" id="whsRow1">
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">TURNING</span> CHAOS INTO ORDER</div>
+          <div class="whs-title">Administrative Tasks</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/scenes-people-work-88cef612.jpg" loading="lazy" alt="Admin"></div>
+          <p class="whs-desc">Scheduling, email management, data entry, CRM, travel booking.</p>
+        </div>
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">CONVERTING</span> CLICKS INTO CLIENTS</div>
+          <div class="whs-title">Digital Marketing</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/digital-interaction-handson-connectivity-2d32c0fd.jpg" loading="lazy" alt="Marketing"></div>
+          <p class="whs-desc">SEO, paid ads, social media, email campaigns, lead generation.</p>
+        </div>
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">24/7</span> CARE THAT BUILDS LOYALTY</div>
+          <div class="whs-title">Customer Support</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/smiling-customer-service-agent-14762cfa.jpg" loading="lazy" alt="Support"></div>
+          <p class="whs-desc">Live chat, helpdesk, inbound/outbound calls, multilingual support.</p>
+        </div>
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">REFRESHING</span> YOUR ONLINE PRESENCE</div>
+          <div class="whs-title">Website Revamp & SEO</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/business-data-analytics-dashboard-68b9db5b.jpg" loading="lazy" alt="Web"></div>
+          <p class="whs-desc">Builds, revamps, mobile optimization, SEO-ready development.</p>
+        </div>
+        <!-- duplicate for loop -->
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">TURNING</span> CHAOS INTO ORDER</div>
+          <div class="whs-title">Administrative Tasks</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/scenes-people-work-88cef612.jpg" loading="lazy" alt="Admin"></div>
+          <p class="whs-desc">Scheduling, email management, data entry, CRM, travel booking.</p>
+        </div>
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">CONVERTING</span> CLICKS INTO CLIENTS</div>
+          <div class="whs-title">Digital Marketing</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/digital-interaction-handson-connectivity-2d32c0fd.jpg" loading="lazy" alt="Marketing"></div>
+          <p class="whs-desc">SEO, paid ads, social media, email campaigns, lead generation.</p>
+        </div>
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">24/7</span> CARE THAT BUILDS LOYALTY</div>
+          <div class="whs-title">Customer Support</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/smiling-customer-service-agent-14762cfa.jpg" loading="lazy" alt="Support"></div>
+          <p class="whs-desc">Live chat, helpdesk, inbound/outbound calls, multilingual support.</p>
+        </div>
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">REFRESHING</span> YOUR ONLINE PRESENCE</div>
+          <div class="whs-title">Website Revamp & SEO</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/business-data-analytics-dashboard-68b9db5b.jpg" loading="lazy" alt="Web"></div>
+          <p class="whs-desc">Builds, revamps, mobile optimization, SEO-ready development.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- animated text strip -->
+    <div class="whs-text-strip">
+      <div class="whs-text-track">
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">VIRTUAL ASSISTANCE</span>
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">DIGITAL MARKETING</span>
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">CUSTOMER SUPPORT</span>
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">WEB DEVELOPMENT</span>
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">FINANCE & ACCOUNTING</span>
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">CREATIVE SERVICES</span>
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">ENGINEERING</span>
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">SOFTWARE & APPS</span>
+        <!-- duplicate -->
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">VIRTUAL ASSISTANCE</span>
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">DIGITAL MARKETING</span>
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">CUSTOMER SUPPORT</span>
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">WEB DEVELOPMENT</span>
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">FINANCE & ACCOUNTING</span>
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">CREATIVE SERVICES</span>
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">ENGINEERING</span>
+        <span class="whs-text-item hi">✦</span>
+        <span class="whs-text-item">SOFTWARE & APPS</span>
+      </div>
+    </div>
+
+    <!-- ROW 2 — scrolls RIGHT -->
+    <div class="whs-track-row">
+      <div class="whs-track row2" id="whsRow2">
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">NUMBERS</span> THAT WORK FOR YOU</div>
+          <div class="whs-title">Finance & Accounting</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/finance-accounting-thumb-ddab5cde.jpg" loading="lazy" alt="Finance"></div>
+          <p class="whs-desc">Bookkeeping, payroll, invoicing, QuickBooks/Xero, reporting.</p>
+        </div>
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">BRINGING</span> YOUR BRAND TO LIFE</div>
+          <div class="whs-title">Creative Services</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/creative-design-thumb-20e9807f.jpg" loading="lazy" alt="Creative"></div>
+          <p class="whs-desc">Graphic design, video editing, branding, copywriting, animations.</p>
+        </div>
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">BUILDING</span> SMARTER SOLUTIONS</div>
+          <div class="whs-title">Software & App Dev</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/software-app-dev-thumb-3e1a3539.jpg" loading="lazy" alt="Dev"></div>
+          <p class="whs-desc">Custom web & mobile apps, API integration, automation platforms.</p>
+        </div>
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">REMOTE-READY</span> ENGINEERING TALENT</div>
+          <div class="whs-title">Engineering Services</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/engineering-solutions-thumb-5c4c3d0a.jpg" loading="lazy" alt="Engineering"></div>
+          <p class="whs-desc">CAD drafting, product design, technical documentation.</p>
+        </div>
+        <!-- duplicate for loop -->
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">NUMBERS</span> THAT WORK FOR YOU</div>
+          <div class="whs-title">Finance & Accounting</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/finance-accounting-thumb-ddab5cde.jpg" loading="lazy" alt="Finance"></div>
+          <p class="whs-desc">Bookkeeping, payroll, invoicing, QuickBooks/Xero, reporting.</p>
+        </div>
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">BRINGING</span> YOUR BRAND TO LIFE</div>
+          <div class="whs-title">Creative Services</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/creative-design-thumb-20e9807f.jpg" loading="lazy" alt="Creative"></div>
+          <p class="whs-desc">Graphic design, video editing, branding, copywriting, animations.</p>
+        </div>
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">BUILDING</span> SMARTER SOLUTIONS</div>
+          <div class="whs-title">Software & App Dev</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/software-app-dev-thumb-3e1a3539.jpg" loading="lazy" alt="Dev"></div>
+          <p class="whs-desc">Custom web & mobile apps, API integration, automation platforms.</p>
+        </div>
+        <div class="whs-card">
+          <div class="whs-tag"><span class="whs-accent">REMOTE-READY</span> ENGINEERING TALENT</div>
+          <div class="whs-title">Engineering Services</div>
+          <div class="whs-img"><img src="https://www.glocalassist.com/assets/engineering-solutions-thumb-5c4c3d0a.jpg" loading="lazy" alt="Engineering"></div>
+          <p class="whs-desc">CAD drafting, product design, technical documentation.</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /whs-tracks -->
+</section>
+
+  <!-- ========== NEW SEAMLESS SUPPORT CAROUSEL SECTION WITH IMAGES ========== -->
+  <section class="support-carousel">
+    <div class="support-container">
+      <div class="support-header">
+        <div class="suptitle">Seamless Support</div>
+        <h2>Plan Selection</h2>
+      </div>
+
+      <div class="carousel">
+        <!-- Arrows -->
+        <div class="carousel-arrow prev" onclick="prevSlide()">‹</div>
+        <div class="carousel-arrow next" onclick="nextSlide()">›</div>
+
+        <div class="carousel-slides">
+          <!-- Slide 1 -->
+          <div class="carousel-slide active" data-index="0">
+            <div class="slide-image">
+              <img src="https://www.glocalassist.com/assets/home-slide-image-1-9875a650.png" alt="Step 1">
+            </div>
+            <div class="slide-content">
+              <div class="step-badge">Step 1</div>
+              <h3>Choose the solutions That Fits Your Needs</h3>
+              <p>Choose from flexible part-time or full-time plans tailored to your needs. Whether you need one assistant or a full team, we have options to match your goals. Pick your plan and start scaling with ease.</p>
+              <a href="#contact" class="btn-hire">START HIRING <span class="chain-icon">🔗</span></a>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-slide" data-index="1">
+            <div class="slide-image">
+              <img src="https://www.glocalassist.com/assets/home-slide-image-2-7cd31269.png" alt="Step 2">
+            </div>
+            <div class="slide-content">
+              <div class="step-badge">Step 2</div>
+              <h3>Personalized Guidance One Call Away.</h3>
+              <p>Interview as many virtual assistants as needed until you find the right fit. We ensure each candidate aligns with your skills, needs, and culture. Start only when you're confident in the match.</p>
+              <a href="#contact" class="btn-hire">START HIRING <span class="chain-icon">🔗</span></a>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-slide" data-index="2">
+            <div class="slide-image">
+              <img src="https://www.glocalassist.com/assets/home-slide-image-3-f63af8fd.png" alt="Step 3">
+            </div>
+            <div class="slide-content">
+              <div class="step-badge">Step 3</div>
+              <h3>Dedicated Expertise Ready to Deliver.</h3>
+              <p>Once selected, we schedule a quick kickoff call with your assistant's manager. Finalize task priorities, workflows, and communication preferences. Everything is aligned before work begins.</p>
+              <a href="#contact" class="btn-hire">START HIRING <span class="chain-icon">🔗</span></a>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-slide" data-index="3">
+            <div class="slide-image">
+              <img src="https://www.glocalassist.com/assets/home-slide-image-4-31e2047a.png" alt="Step 4">
+            </div>
+            <div class="slide-content">
+              <div class="step-badge">Step 4</div>
+              <h3>Track Progress, Achieve Success.</h3>
+              <p>Your assistant handles daily operations, freeing you to focus on growth. From admin to marketing, we’ve got the details covered. You stay in control while we handle the rest.</p>
+              <a href="#contact" class="btn-hire">START HIRING <span class="chain-icon">🔗</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dots navigation -->
+        <div class="carousel-dots">
+          <span class="dot active" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
+          <span class="dot" onclick="goToSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+<!-- ========== END NEW SECTION ========== -->
+
+<!-- ========== GOOGLE REVIEWS / CASE STUDIES HERO SECTION ========== -->
+<section class="gr-hero-sec">
+
+  <!-- Full width image background -->
+  <div class="gr-hero-img">
+    <img 
+      src="https://www.glocalassist.com/assets/case-study-section-image-7d8a4730.png" 
+      alt="GlocalAssist Team"
+      onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1400&h=700&fit=crop&crop=top'"
+    >
+  </div>
+
+  <!-- Bottom overlay content — left text + right description -->
+  <div class="gr-hero-overlay">
+
+    <!-- Bottom Left: Big heading -->
+    <div class="gr-hero-left">
+      <h2 class="gr-hero-title">Case Studies</h2>
+      <p class="gr-hero-sub">
+        <span class="gr-hs-pink">Real Sto</span><span class="gr-hs-gray">ries</span><span class="gr-hs-pink">,</span>
+        <span class="gr-hs-gray"> Real </span><span class="gr-hs-teal">Impact.</span>
+      </p>
+    </div>
+
+    <!-- Bottom Right: description + arrows -->
+    <div class="gr-hero-right">
+      <p class="gr-hero-desc">
+        From <span class="gr-hs-pink">strategic planning</span> to <span class="gr-hs-teal">flawless execution</span>, our case studies highlight the milestones we've achieved in collaboration with our clients.
+      </p>
+      <div class="gr-hero-arrows">
+        <button class="gr-arrow gr-arr-prev" onclick="prevSlide()" aria-label="Previous">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="gr-arrow gr-arr-next" onclick="nextSlide()" aria-label="Next">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<!-- ========== END SECTION ========== -->
+
+
+
+<!-- ========== HOW WE NAIL IT SECTION ========== -->
+<section class="nail-sec">
+
+  <!-- LEFT: White side with features -->
+  <div class="nail-left">
+    <div class="nail-feature">
+      <div class="nail-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+          <circle cx="19" cy="19" r="3" fill="currentColor" stroke="none"/>
+          <path d="M19 17v4M17 19h4" stroke="white" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div class="nail-feature-text">
+        <h4>Tailored Solutions for Every Need</h4>
+        <p>Services tailored to your unique business needs.</p>
+      </div>
+    </div>
+
+    <div class="nail-divider"></div>
+
+    <div class="nail-feature">
+      <div class="nail-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="7" r="3"/>
+          <circle cx="15" cy="7" r="3"/>
+          <path d="M3 21v-2a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v2"/>
+          <circle cx="18" cy="18" r="3.5" fill="currentColor" stroke="none"/>
+          <path d="M18 16.5v3M16.5 18h3" stroke="white" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div class="nail-feature-text">
+        <h4>Expert Team of Professionals</h4>
+        <p>Reliable and trained Virtual Assistants.</p>
+      </div>
+    </div>
+
+    <div class="nail-divider"></div>
+
+    <div class="nail-feature">
+      <div class="nail-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <circle cx="12" cy="12" r="6"/>
+          <circle cx="12" cy="12" r="2" fill="currentColor"/>
+          <path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>
+        </svg>
+      </div>
+      <div class="nail-feature-text">
+        <h4>Cost-Effective and Scalable</h4>
+        <p>Affordable, scalable support for your growth.</p>
+      </div>
+    </div>
+
+    <div class="nail-divider"></div>
+
+    <div class="nail-feature">
+      <div class="nail-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M9 12l2 2 4-4"/>
+        </svg>
+      </div>
+      <div class="nail-feature-text">
+        <h4>Focus on What Matters Most</h4>
+        <p>Delegate tasks and focus on what truly matters.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Black side with image + heading + CTA -->
+  <div class="nail-right">
+    <!-- Person image bleeds from center -->
+    <div class="nail-person">
+      <img src="https://www.glocalassist.com/assets/AdobeExpressPhotos_e21069fc5b164df48bd7ce861456f864_CopyEdited.png"
+           alt="Professional VA Expert"
+           onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=700&fit=crop&crop=top'">
+    </div>
+
+    <!-- Dark overlay content -->
+    <div class="nail-right-content">
+      <h2 class="nail-heading">
+        Here's how <span class="nail-acc-pink">we</span> nail <span class="nail-acc-teal">it.</span>
+      </h2>
+      <p class="nail-desc">From strategic planning to flawless execution, our case studies highlight the milestones.</p>
+      <a href="#contact" class="nail-cta">TALK TO OUR EXPERTS AND START HIRING</a>
+    </div>
+  </div>
+
+</section>
+<!-- ========== END HOW WE NAIL IT ========== -->
+
+<!-- ========== LOGO CAROUSEL SECTION ========== -->
+<section class="logo-carousel-sec">
+  <div class="lc-label">Trusted by Leading Brands</div>
+
+  <div class="lc-track-wrap">
+    <!-- Left fade -->
+    <div class="lc-fade lc-fade-left"></div>
+    <!-- Right fade -->
+    <div class="lc-fade lc-fade-right"></div>
+
+    <div class="lc-track" id="lcTrack">
+
+      <!-- Logo 1 -->
+      <div class="lc-item">
+        <img src="https://www.glocalassist.com/assets/footer-carousel-logo-3-35ec3b06.png"
+             alt="CityPlat"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="lc-text-logo" style="display:none">CITYPLAT</span>
+      </div>
+
+      <!-- Logo 2 -->
+      <div class="lc-item">
+        <img src="https://www.glocalassist.com/assets/footer-carousel-logo-6-98328395.png"
+             alt="NWH"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="lc-text-logo" style="display:none">NWH</span>
+      </div>
+
+      <!-- Logo 3 -->
+      <div class="lc-item">
+        <img src="https://www.glocalassist.com/assets/footer-carousel-logo-8-5d4c346c.png"
+             alt="Stabilis"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="lc-text-logo" style="display:none">STĀBILIS</span>
+      </div>
+
+      <!-- Logo 4 -->
+      <div class="lc-item">
+        <img src="https://www.glocalassist.com/assets/footer-carousel-logo-1-11f1c823.png"
+             alt="Fridman Law Firm"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="lc-text-logo" style="display:none">FRIDMAN LAW FIRM</span>
+      </div>
+
+      <!-- Logo 5 -->
+      <div class="lc-item">
+        <img src="https://www.glocalassist.com/assets/footer-carousel-logo-9-c8912bab.png"
+             alt="Someone Cares"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="lc-text-logo" style="display:none">SOMEONE CARES</span>
+      </div>
+
+      <!-- Logo 6 -->
+      <div class="lc-item">
+        <img src="https://www.glocalassist.com/assets/footer-carousel-logo-13-df22e962.png"
+             alt="Aria Technologies"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="lc-text-logo" style="display:none">ARIA TECHNOLOGIES</span>
+      </div>
+
+      <!-- Logo 7 -->
+      <div class="lc-item">
+        <img src="https://www.glocalassist.com/assets/footer-carousel-logo-13-df22e962.png"
+             alt="KPG Healthcare"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="lc-text-logo" style="display:none">KPG HEALTHCARE</span>
+      </div>
+
+      <!-- Logo 8 — duplicate starts (for seamless loop) -->
+      <div class="lc-item">
+        <img src="https://www.glocalassist.com/assets/footer-carousel-logo-4-1bb571ae.png" alt="CityPlat"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="lc-text-logo" style="display:none">CITYPLAT</span>
+      </div>
+      <div class="lc-item">
+        <img src="https://www.glocalassist.com/assets/footer-carousel-logo-6-98328395.png" alt="NWH"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="lc-text-logo" style="display:none">NWH</span>
+      </div>
+      <div class="lc-item">
+        <img src="https://www.glocalassist.com/assets/footer-carousel-logo-4-1bb571ae.png" alt="Stabilis"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="lc-text-logo" style="display:none">STĀBILIS</span>
+      </div>
+      <div class="lc-item">
+        <img src="https://www.glocalassist.com/assets/footer-carousel-logo-14-6337fb7f.png" alt="Fridman Law Firm"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="lc-text-logo" style="display:none">FRIDMAN LAW FIRM</span>
+      </div>
+      <div class="lc-item">
+        <img src="https://www.glocalassist.com/assets/footer-carousel-logo-14-6337fb7f.png" alt="Someone Cares"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="lc-text-logo" style="display:none">SOMEONE CARES</span>
+      </div>
+      <div class="lc-item">
+        <img src="https://www.glocalassist.com/assets/footer-carousel-logo-11-57ff6492.png" alt="Aria Technologies"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="lc-text-logo" style="display:none">ARIA TECHNOLOGIES</span>
+      </div>
+      <div class="lc-item">
+        <img src="https://www.glocalassist.com/assets/footer-carousel-logo-10-d8579bca.png" alt="KPG Healthcare"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="lc-text-logo" style="display:none">KPG HEALTHCARE</span>
+      </div>
+
+    </div><!-- /lc-track -->
+  </div>
+</section>
+<!-- ========== END LOGO CAROUSEL ========== -->
+
+<!-- ========== SIMPLIFY STREAMLINE SUCCEED SECTION ========== -->
+<section class="sss-sec">
+
+  <!-- Full background image -->
+  <div class="sss-bg">
+    <img src="https://www.glocalassist.com/assets/footer-bg-65f771cf.jpg"
+         alt="GlocalAssist Team"
+         onerror="this.style.display='none'">
+  </div>
+
+  <!-- Dark overlay -->
+  <div class="sss-overlay"></div>
+
+  <!-- Content — bottom area -->
+  <div class="sss-content">
+
+    <!-- Left: Big tagline -->
+    <div class="sss-left">
+      <h2 class="sss-tagline">
+        <span class="sss-t1">Simplify,</span>
+        <span class="sss-t2">Streamline,</span>
+        <span class="sss-t3">Succeed.</span>
+      </h2>
+    </div>
+
+    <!-- Right: Heading + desc + schedule -->
+    <div class="sss-right">
+      <h3 class="sss-heading">Let's Build Something Great Together!</h3>
+      <p class="sss-desc">Our pros are primed, vetted & ready to rocket-fuel every role and function of your organization.</p>
+      <div class="sss-divider"></div>
+      <div class="sss-schedule">
+        <span class="sss-sch-label">Schedule a meet with us.</span>
+        <div class="sss-meet-icons">
+          <!-- Google Meet -->
+          <a href="#contact" class="sss-meet-icon" title="Google Meet">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+              <path fill="#00832d" d="M27.99 24l8.01 6.44V17.56z"/>
+              <path fill="#0066da" d="M6 17.56v12.88l7.51 4.51 11.49-4.95V18l-11.49-4.95z"/>
+              <path fill="#e94235" d="M25.51 13.05L13.51 8 6 12.44v5.12l19.51 6.44V14.56z"/>
+              <path fill="#2684fc" d="M25.51 33.44l-12 4L6 35.56v-5.12l19.51-6.44v9.44z"/>
+              <path fill="#00ac47" d="M36 30.44L25.51 24v9.44l2.48.75L36 30.44z"/>
+              <path fill="#ffba00" d="M36 17.56l-8.01 6.44 2.48.75L36 22.88v-5.32z"/>
+            </svg>
+          </a>
+          <!-- Calendly -->
+          <a href="#contact" class="sss-meet-icon" title="Calendly">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+              <circle cx="24" cy="24" r="24" fill="#006BFF"/>
+              <path fill="white" d="M24 10c-7.73 0-14 6.27-14 14s6.27 14 14 14 14-6.27 14-14S31.73 10 24 10zm0 25c-6.07 0-11-4.93-11-11s4.93-11 11-11 11 4.93 11 11-4.93 11-11 11zm1-18h-3v9l7.5 4.5 1.5-2.46-6-3.54V17z"/>
+            </svg>
+          </a>
+          <!-- Zoom -->
+          <a href="#contact" class="sss-meet-icon" title="Zoom">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+              <circle cx="24" cy="24" r="24" fill="#2D8CFF"/>
+              <path fill="white" d="M13 18h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H13a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2zm22 2.5l-6 4v3l6 4V20.5z"/>
+            </svg>
+          </a>
+          <!-- Microsoft Teams -->
+          <a href="#contact" class="sss-meet-icon" title="Microsoft Teams">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+              <path fill="#5059C9" d="M28 18h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-8l-2-4V18z"/>
+              <circle fill="#5059C9" cx="33" cy="14" r="4"/>
+              <path fill="#7B83EB" d="M10 20a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V20z"/>
+              <circle fill="#7B83EB" cx="20" cy="14" r="5"/>
+              <path fill="white" d="M22 18h-4v10h2V22h2a2 2 0 0 0 0-4z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ========== END SSS SECTION ========== -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="fg">
+    <div class="fb">
+      <div style="font-family:'Inter',sans-serif;font-size:18px;font-weight:800;color:white"><span style="color:var(--teal)">G</span>LOCA<span style="color:var(--pink)">L</span> ASSIST</div>
+      <p>We are Glocal Assist, a trusted partner for businesses seeking efficiency, growth, and digital excellence. Our expertise spans outsourcing solutions, technology, digital marketing, creative services and much more. </p>
+      <div class="fcontact">
+        <a href="/cdn-cgi/l/email-protection#0b6e657a7e6279724b6c6764686a676a787862787f25686466">✉ <span class="__cf_email__" data-cfemail="3c59524d49554e457c5b50535f5d505d4f4f554f48125f5351">enquiry@glocalassist.com</span></a>
+        <a href="tel:+17323444260">📞 +1 (732) 344 4260</a>
+        <a href="tel:+19179387208">📞 +91 (917) 938 7208</a>
+      </div>
+    </div>
+    <div class="fcol"><h4>Services</h4><ul><li><a href="#">Virtual Assistance</a></li><li><a href="#">Finance & Accounting</a></li><li><a href="#">Customer Support</a></li><li><a href="#">Digital Marketing</a></li><li><a href="#">Web Development</a></li><li><a href="#">Creative Services</a></li></ul></div>
+    <div class="fcol"><h4>Company</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Our Team</a></li><li><a href="#">Case Studies</a></li><li><a href="#">Blog</a></li><li><a href="#">Careers</a></li></ul></div>
+    <div class="fcol"><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">NDA Policy</a></li><li><a href="#">Contact Us</a></li></ul></div>
+  </div>
+  <div class="fb2"><p>© 2026 GlocalAssist. All rights reserved.</p><p>think global · work local</p></div>
+</footer>
+
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
